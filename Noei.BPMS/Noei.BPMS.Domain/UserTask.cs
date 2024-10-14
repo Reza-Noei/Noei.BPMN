@@ -2,13 +2,12 @@
 {
     public class UserTask : BPMNElement
     {
-        public string Assignee { get; set; }
-
-        public override void Execute()
+        public UserTask(string id, string name) : base(id, name)
         {
-            Console.WriteLine($"User Task '{Name}' assigned to: {Assignee}");
-            // Logic for assigning the task and waiting for completion
+
         }
+
+        public string Assignee { get; set; }
 
         public void Complete()
         {

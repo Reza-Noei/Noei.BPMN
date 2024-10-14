@@ -2,10 +2,14 @@
 {
     public class StartEvent : BPMNElement
     {
-        public override void Execute()
+        public StartEvent(string id, string name)
+            : base(id, name)
         {
-            Console.WriteLine("Start Event: " + Name);
-            // Additional logic to trigger the workflow start.
+        }
+
+        public void Start()
+        {
+            Console.WriteLine($"Starting event: {Name}");
         }
     }
 }

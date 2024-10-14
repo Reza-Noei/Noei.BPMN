@@ -2,10 +2,14 @@
 {
     public class EndEvent : BPMNElement
     {
-        public override void Execute()
+        public EndEvent(string id, string name)
+            : base(id, name)
         {
-            Console.WriteLine("End Event: " + Name);
-            // Logic to complete the workflow
+        }
+
+        public void End()
+        {
+            Console.WriteLine($"Ending event: {Name}");
         }
     }
 }

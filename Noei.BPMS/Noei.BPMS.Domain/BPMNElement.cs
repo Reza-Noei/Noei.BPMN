@@ -6,6 +6,10 @@
 
         public string Name { get; set; }
 
-        public abstract void Execute();
+        public BPMNElement(string id, string name)
+        {
+            Id = id;
+            Name = name;
+        }
     }
 }
