@@ -8,7 +8,6 @@
         public void Trigger()
         {
             Console.WriteLine($"Flow from {Source.Name} to {Target.Name}");
-            Target.Execute();
         }
     }
 }

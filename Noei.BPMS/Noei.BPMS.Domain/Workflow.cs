@@ -1,18 +1,17 @@
 ﻿namespace Noei.BPMS.Domain
 {
     public class Workflow
-    {
-        private List<BPMNElement> _elements;
+    { 
+        public ICollection<BPMNElement> Elements;
 
         public Workflow()
         {
-            _elements = new List<BPMNElement>();
+            Elements = new List<BPMNElement>();
         }
 
-        // Add BPMN elements (Activity, Gateway, Event, etc.)
         public void AddElement(BPMNElement element)
         {
-            _elements.Add(element);
+            Elements.Add(element);
         }
 
         public void ExecuteWorkflow()
