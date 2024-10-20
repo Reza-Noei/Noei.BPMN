@@ -4,32 +4,31 @@ namespace Noei.BPMS.Domain
 {
     public class Gateway : BPMNElement
     {
-        private Dictionary<string, Expression<Func<bool>>> _conditionalFlows;
+        public Dictionary<string, Expression<Func<bool>>> ConditionalFlows { get; private set; }
 
-        public Gateway(string id, string name)
-            : base(id, name)
+        public Gateway(string name) : base(name)
         {
-            _conditionalFlows = new Dictionary<string, Expression<Func<bool>>>();
+            ConditionalFlows = new Dictionary<string, Expression<Func<bool>>>();
         }
 
-        // Add conditional flows
-        public void AddConditionalFlow(string flowName, Expression<Func<bool>> condition)
+        public void AddConditionalFlow(string targetElementName, Expression<Func<bool>> condition)
         {
-            _conditionalFlows[flowName] = condition;
+            ConditionalFlows[targetElementName] = condition;
         }
 
-        // Evaluate conditions to determine which flow to take
         public string EvaluateConditions()
         {
-            foreach (var flow in _conditionalFlows)
+            foreach (var condition in ConditionalFlows)
             {
-                if (flow.Value.Compile().Invoke())
+                if (condition.Value.Compile().Invoke())
                 {
-                    return flow.Key; // Return the name of the matching flow
+                    return condition.Key;
                 }
             }
 
-            return null; // No conditions matched
+            return null; 
         }
     }
+
+
 }

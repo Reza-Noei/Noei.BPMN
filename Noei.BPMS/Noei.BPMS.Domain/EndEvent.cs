@@ -2,10 +2,7 @@
 {
     public class EndEvent : BPMNElement
     {
-        public EndEvent(string id, string name)
-            : base(id, name)
-        {
-        }
+        public EndEvent(string name): base(name) { }
 
         public void End()
         {

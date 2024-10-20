@@ -2,7 +2,7 @@
 {
     public class ServiceTask : BPMNElement
     {
-        public ServiceTask(string id, string name) : base(id, name)
+        public ServiceTask(string name) : base(name)
         {
 
         }

@@ -2,8 +2,8 @@
 {
     public class StartEvent : BPMNElement
     {
-        public StartEvent(string id, string name)
-            : base(id, name)
+        public StartEvent(string name)
+            : base(name)
         {
         }
 

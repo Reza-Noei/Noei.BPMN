@@ -2,10 +2,10 @@
 {
     public class WorkflowState
     {
-        public string ElementName { get; set; }
+        public string CurrentElement { get; private set; }
 
-        public Dictionary<string, string> StateData { get; set; } = new Dictionary<string, string>();
+        public Dictionary<string, string> StateData { get; private set; } = new Dictionary<string, string>();
 
-        public DateTime Timestamp { get; set; } = DateTime.UtcNow; // Automatically record when the state was saved
+        public DateTime Timestamp { get; private set; } = DateTime.UtcNow;
     }
 }

@@ -7,14 +7,16 @@
     <Nullable>enable</Nullable>
     <IsAspireHost>true</IsAspireHost>
     <UserSecretsId>c35f99ff-ba4c-4e91-b465-4cf078ac726f</UserSecretsId>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Noei.BPMS.ApiService\Noei.BPMS.ApiService.csproj" />
+    <ProjectReference Include="..\Noei.BPMS.DatabaseMigration\Noei.BPMS.DatabaseMigration.csproj" />
+    <ProjectReference Include="..\Noei.BPMS.Service\Noei.BPMS.Service.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.1" />
+    <PackageReference Include="Aspire.Hosting.AppHost" />
   </ItemGroup>
 
 </Project>

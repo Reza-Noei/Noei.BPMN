@@ -2,10 +2,12 @@
 {
     public class WorkflowContext
     {
-        public int WorkflowId { get; set; } 
+        public Guid Id { get; private set; }
 
-        public WorkflowState CurrentState { get; set; }
+        public virtual Workflow Workflow { get; private set; } 
 
-        public WorkflowBootstrapData BootstrapData { get; set; }
+        public virtual WorkflowState CurrentState { get; private set; }
+
+        public virtual WorkflowBootstrapData BootstrapData { get; private set; }
     }
 }

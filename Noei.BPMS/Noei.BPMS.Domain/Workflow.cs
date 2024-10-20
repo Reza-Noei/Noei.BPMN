@@ -2,7 +2,7 @@
 {
     public class Workflow
     { 
-        public ICollection<BPMNElement> Elements;
+        public ICollection<BPMNElement> Elements { get; private set; }
 
         public Workflow()
         {
@@ -16,26 +16,24 @@
 
         public void ExecuteWorkflow()
         {
-            // Iterate through the elements and execute them as needed
-            foreach (var element in _elements)
+            foreach (var element in Elements)
             {
                 if (element is Activity activity)
                 {
-                    activity.Execute();  // Execute activities
+                    activity.Execute();
                 }
                 else if (element is Gateway gateway)
                 {
-                    string flowName = gateway.EvaluateConditions();  // Evaluate conditions in gateway
+                    string flowName = gateway.EvaluateConditions();
                     Console.WriteLine($"Taking flow: {flowName}");
-                    // Based on flowName, you could add logic to move to a specific element.
                 }
                 else if (element is StartEvent startEvent)
                 {
-                    startEvent.Start();  // Handle Start event
+                    startEvent.Start();
                 }
                 else if (element is EndEvent endEvent)
                 {
-                    endEvent.End();  // Handle End event
+                    endEvent.End();
                 }
             }
         }

@@ -4,13 +4,11 @@
     {
         public Action ActionToExecute { get; set; }
 
-        public Activity(string id, string name, Action action)
-            : base(id, name)
+        public Activity(string name, Action action): base(name)
         {
             ActionToExecute = action;
         }
 
-        // Activities have work to perform, so they retain the Execute method
         public void Execute()
         {
             Console.WriteLine($"Executing activity: {Name}");

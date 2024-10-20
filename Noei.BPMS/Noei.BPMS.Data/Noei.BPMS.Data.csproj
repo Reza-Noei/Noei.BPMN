@@ -7,4 +7,10 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Noei.BPMS.Domain\Noei.BPMS.Domain.csproj" />
+
+    <!--<PackageReference Include="BSN.Commons.Orm.EntityFrameworkCore" />-->
+  </ItemGroup>
+
 </Project>

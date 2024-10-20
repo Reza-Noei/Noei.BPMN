@@ -6,9 +6,8 @@
 
         public string Name { get; set; }
 
-        public BPMNElement(string id, string name)
+        public BPMNElement(string name)
         {
-            Id = id;
             Name = name;
         }
     }
