@@ -8,15 +8,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noei.BPMS.ServiceDefaults",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noei.BPMS.Domain", "Noei.BPMS.Domain\Noei.BPMS.Domain.csproj", "{70538BC7-BD34-4400-9E73-46A24570A18F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noei.BPMS.Data", "Noei.BPMS.Data\Noei.BPMS.Data.csproj", "{66FD9166-1A05-4417-9AEA-9FD43A957D31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noei.BPMS.Data", "Noei.BPMS.Data\Noei.BPMS.Data.csproj", "{66FD9166-1A05-4417-9AEA-9FD43A957D31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noei.BPMS.Data.SqlServer", "Noei.BPMS.Data.SqlServer\Noei.BPMS.Data.SqlServer.csproj", "{A30B5FC7-E67D-49A0-AC21-90CE249D4557}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noei.BPMS.Data.SqlServer", "Noei.BPMS.Data.SqlServer\Noei.BPMS.Data.SqlServer.csproj", "{A30B5FC7-E67D-49A0-AC21-90CE249D4557}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noei.BPMS.DatabaseMigration", "Noei.BPMS.DatabaseMigration\Noei.BPMS.DatabaseMigration.csproj", "{B1F1FB0B-0C20-40C9-8D1C-18C3B84B324B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noei.BPMS.Presentation.Dto", "Noei.BPMS.Presentation.Dto\Noei.BPMS.Presentation.Dto.csproj", "{C900C7DA-16C3-4916-B0BA-B547AB583D4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noei.BPMS.Presentation.Dto", "Noei.BPMS.Presentation.Dto\Noei.BPMS.Presentation.Dto.csproj", "{C900C7DA-16C3-4916-B0BA-B547AB583D4E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noei.BPMS.Service", "Noei.BPMS.Service\Noei.BPMS.Service.csproj", "{C067FFD0-6091-410C-87E2-530EEC9993BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noei.BPMS.Web.Server", "Noei.BPMS.Web\Noei.BPMS.Web.Server\Noei.BPMS.Web.Server.csproj", "{F55BB58C-23DD-421A-90E4-EB7F2300F200}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "noei.bpms.web.client", "Noei.BPMS.Web\noei.bpms.web.client\noei.bpms.web.client.esproj", "{D1723F38-1104-4800-A134-DCA29A1F6547}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,10 +54,16 @@ Global
 		{C900C7DA-16C3-4916-B0BA-B547AB583D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C900C7DA-16C3-4916-B0BA-B547AB583D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C900C7DA-16C3-4916-B0BA-B547AB583D4E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C067FFD0-6091-410C-87E2-530EEC9993BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C067FFD0-6091-410C-87E2-530EEC9993BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C067FFD0-6091-410C-87E2-530EEC9993BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C067FFD0-6091-410C-87E2-530EEC9993BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55BB58C-23DD-421A-90E4-EB7F2300F200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55BB58C-23DD-421A-90E4-EB7F2300F200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55BB58C-23DD-421A-90E4-EB7F2300F200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55BB58C-23DD-421A-90E4-EB7F2300F200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1723F38-1104-4800-A134-DCA29A1F6547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1723F38-1104-4800-A134-DCA29A1F6547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1723F38-1104-4800-A134-DCA29A1F6547}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D1723F38-1104-4800-A134-DCA29A1F6547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1723F38-1104-4800-A134-DCA29A1F6547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1723F38-1104-4800-A134-DCA29A1F6547}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

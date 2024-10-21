@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Noei.BPMS.DatabaseMigration\Noei.BPMS.DatabaseMigration.csproj" />
-    <ProjectReference Include="..\Noei.BPMS.Service\Noei.BPMS.Service.csproj" />
+    <ProjectReference Include="..\Noei.BPMS.Web\Noei.BPMS.Web.Server\Noei.BPMS.Web.Server.csproj" />
   </ItemGroup>
 
   <ItemGroup>
